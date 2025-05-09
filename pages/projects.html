@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ashok</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .projects-section {
+            padding: 120px 2rem 2rem;
+            background: var(--nike-white);
+        }
+
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            border: 2px solid var(--nike-black);
+            background: transparent;
+            color: var(--nike-black);
+            font-weight: 600;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--nike-black);
+            color: var(--nike-white);
+        }
+
+        .featured-project {
+            max-width: 1400px;
+            margin: 3rem auto;
+            background: var(--nike-black);
+            color: var(--nike-white);
+            padding: 3rem;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .featured-project-content h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .featured-project-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: var(--nike-accent);
+            color: var(--nike-white);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .project-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-btn.outline {
+            background: transparent;
+            border: 2px solid var(--nike-white);
+        }
+
+        .featured-project-image {
+            position: relative;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .featured-project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0,0,0,0.4), transparent);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #f2f2f2;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-category {
+            color: var(--nike-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--nike-black);
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 992px) {
+            .featured-project {
+                grid-template-columns: 1fr;
+                padding: 2rem;
+            }
+
+            .featured-project-image {
+                height: 300px;
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects-section {
+                padding: 100px 1rem 1rem;
+            }
+
+            .featured-project-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <h2 class="loader-text">JUST DO IT</h2>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Ashok</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../know-more.html">Explore</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="languages.html">Tech Stack</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h1 class="section-title" data-aos="fade-up">My Projects</h1>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Exploring creativity through code</p>
+
+        <!-- Project Filters -->
+        <div class="project-filters" data-aos="fade-up">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Games</button>
+            <button class="filter-btn">Web Apps</button>
+            <button class="filter-btn">Visualizers</button>
+        </div>
+
+        <!-- Featured Project -->
+        <div class="featured-project" data-aos="fade-up">
+            <div class="featured-project-content">
+                <h2>Zeroro2DGame</h2>
+                <p>A 2D adventure game where you can explore, collect items, and avoid hazards. Built with Godot Engine, this project marks my first step into game development.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Godot Engine</span>
+                    <span class="tech-tag">2D Physics</span>
+                    <span class="tech-tag">Game Design</span>
+                    <span class="tech-tag">HTML5</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://ashok0076.github.io/Zeroro2DGame/" target="_blank" class="project-btn">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Play Now</span>
+                    </a>
+                    <a href="https://github.com/ashok0076/Zeroro2DGame" target="_blank" class="project-btn outline">
+                        <i class="fab fa-github"></i>
+                        <span>View Source</span>
+                    </a>
+                </div>
+            </div>
+            <div class="featured-project-image" style="background-image: url('https://images.unsplash.com/photo-1550745165-9bc0b252726f')"></div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- InsertionSort Visualizer -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1516116216624-53e697fedbea')"></div>
+                <div class="project-content">
+                    <span class="project-category">Visualizer</span>
+                    <h3 class="project-title">InsertionSort Visualizer</h3>
+                    <p class="project-description">An interactive web application that visually demonstrates the Insertion Sort algorithm step by step.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ashok0076.github.io/InsertionSortVisualizer/" target="_blank" class="project-btn">
+                            <i class="fas fa-eye"></i>
+                            <span>View Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards here -->
+
+        </div>
+
+        <a href="../know-more.html" class="back-home-btn" data-aos="fade-up">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Explore</span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Ashok. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/ashokversez" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ashokmanikanta" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ashok0076" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UConSYS8Vo2v_EzdF6bLjogQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

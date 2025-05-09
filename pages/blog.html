@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read technical insights and game development experiences from Gurram Ashok Manikanta, KL University student and aspiring game developer.">
+    <meta name="keywords" content="Game Development Blog, Ashok Manikanta Articles, KL University Student Blog, Unity Development Tips">
+    <meta name="author" content="Gurram Ashok Manikanta">
+    <title>Blog - Ashok Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .blog-section {
+            padding: 120px 2rem 2rem;
+            background: var(--nike-white);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .featured-post {
+            grid-column: 1 / -1;
+            background: var(--nike-black);
+            color: var(--nike-white);
+            padding: 3rem;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .featured-post-content {
+            flex: 1;
+        }
+
+        .featured-post-image {
+            flex: 1;
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-card {
+            background: #fff;
+            border: 1px solid #f2f2f2;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-category {
+            color: var(--nike-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--nike-black);
+        }
+
+        .blog-excerpt {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .blog-meta i {
+            color: var(--nike-accent);
+        }
+
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--nike-black);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: var(--nike-accent);
+        }
+
+        .read-more i {
+            transition: transform 0.3s ease;
+        }
+
+        .read-more:hover i {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 992px) {
+            .featured-post {
+                flex-direction: column;
+            }
+
+            .featured-post-image {
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <h2 class="loader-text">JUST DO IT</h2>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Ashok</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html">Skills</a></li>
+                <li><a href="gaming.html">Gaming Dev</a></li>
+                <li><a href="social.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <h1 class="section-title" data-aos="fade-up" data-aos-delay="100">Blog</h1>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Sharing my thoughts and experiences in tech, gaming, and life</p>
+
+        <!-- Featured Blog Post -->
+        <div class="featured-post" data-aos="fade-up" data-aos-delay="300">
+            <div class="featured-post-content">
+                <div class="post-category">Featured</div>
+                <h2>My Journey into Game Development</h2>
+                <p>Exploring the exciting world of game development, from concept to creation. Join me as I share my experiences, challenges, and lessons learned along the way.</p>
+                <div class="post-meta">
+                    <span class="post-date">March 15, 2024</span>
+                    <span class="read-time">5 min read</span>
+                </div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="featured-post-image">
+                <img src="../assets/images/featured-blog.jpg" alt="Game Development Journey">
+            </div>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+            <!-- Blog Post 1 -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6')"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Development</span>
+                    <h3 class="blog-title">Building Scalable Web Applications</h3>
+                    <p class="blog-excerpt">Best practices and lessons learned from developing large-scale web applications.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                        <span><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        <span>Read Article</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1555949963-ff9fe0c870eb')"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Machine Learning</span>
+                    <h3 class="blog-title">Deep Learning in Computer Vision</h3>
+                    <p class="blog-excerpt">Understanding the fundamentals of computer vision and its applications.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> March 5, 2024</span>
+                        <span><i class="far fa-clock"></i> 12 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        <span>Read Article</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="blog-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')"></div>
+                <div class="blog-content">
+                    <span class="blog-category">Career</span>
+                    <h3 class="blog-title">From Student to Tech Professional</h3>
+                    <p class="blog-excerpt">My journey and advice for aspiring developers entering the tech industry.</p>
+                    <div class="blog-meta">
+                        <span><i class="far fa-calendar"></i> March 1, 2024</span>
+                        <span><i class="far fa-clock"></i> 6 min read</span>
+                    </div>
+                    <a href="#" class="read-more">
+                        <span>Read Article</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <a href="../know-more.html" class="back-home-btn" data-aos="fade-up" data-aos-delay="800">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Explore</span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Ashok. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/ashokversez" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ashokmanikanta" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ashok0076" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UConSYS8Vo2v_EzdF6bLjogQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

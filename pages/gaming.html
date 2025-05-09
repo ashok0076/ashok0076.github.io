@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game development projects and portfolio by Gurram Ashok Manikanta. See Unity games, development process, and technical implementations.">
+    <meta name="keywords" content="Game Development Portfolio, Unity Games, Ashok Manikanta Games, KL University Game Developer">
+    <meta name="author" content="Gurram Ashok Manikanta">
+    <title>Gaming - Ashok Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .game-showcase {
+            padding: 5rem 1rem;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .game-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .game-info {
+            padding: 1.5rem;
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .game-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .game-tech {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tech-tag {
+            background: #007bff;
+            color: #fff;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .game-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .game-link {
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .game-link:hover {
+            background: #007bff;
+        }
+
+        .section-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <h2 class="loader-text">JUST DO IT</h2>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ashok</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html">Skills</a></li>
+                <li><a href="gaming.html">Gaming Dev</a></li>
+                <li><a href="social.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="game-showcase">
+        <h1 class="section-title" data-aos="fade-up" data-aos-delay="100">Gaming Development</h1>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+            Explore my journey in game development, from simple 2D games to complex 3D environments.
+            Here are some of my notable projects and achievements in the gaming industry.
+        </p>
+
+        <div class="game-grid">
+            <!-- Game Project 1 -->
+            <div class="game-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f" alt="2D Platformer" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">2D Adventure Platformer</h3>
+                    <p class="game-description">A classic platformer game with modern mechanics and pixel art graphics.</p>
+                    <div class="game-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">2D Graphics</span>
+                    </div>
+                    <div class="game-links">
+                        <a href="#" class="game-link">Play Demo</a>
+                        <a href="#" class="game-link">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Project 2 -->
+            <div class="game-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f" alt="3D RPG" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">3D RPG Adventure</h3>
+                    <p class="game-description">An immersive 3D RPG with dynamic combat system and quest mechanics.</p>
+                    <div class="game-tech">
+                        <span class="tech-tag">Unreal Engine</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">3D Modeling</span>
+                    </div>
+                    <div class="game-links">
+                        <a href="#" class="game-link">Watch Trailer</a>
+                        <a href="#" class="game-link">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Project 3 -->
+            <div class="game-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="https://images.unsplash.com/photo-1580234811497-9df7fd2f357e" alt="Mobile Game" class="game-image">
+                <div class="game-info">
+                    <h3 class="game-title">Mobile Puzzle Game</h3>
+                    <p class="game-description">A challenging puzzle game designed for mobile platforms with unique mechanics.</p>
+                    <div class="game-tech">
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Mobile</span>
+                        <span class="tech-tag">UI/UX</span>
+                    </div>
+                    <div class="game-links">
+                        <a href="#" class="game-link">App Store</a>
+                        <a href="#" class="game-link">Play Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Ashok. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/ashokversez" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ashokmanikanta" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ashok0076" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UConSYS8Vo2v_EzdF6bLjogQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

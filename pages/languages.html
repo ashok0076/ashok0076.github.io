@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the technical skills and programming languages mastered by Gurram Ashok Manikanta, KL University student and game developer.">
+    <meta name="keywords" content="Programming Skills, Game Development Technologies, KL University Tech Stack, Ashok Manikanta Technical Skills">
+    <meta name="author" content="Gurram Ashok Manikanta">
+    <title>Skills - Ashok Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .tech-section {
+            padding: 120px 2rem 2rem;
+            background: var(--nike-white);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .tech-category {
+            background: #fff;
+            border: 1px solid #f2f2f2;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tech-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .tech-category h3 {
+            color: var(--nike-black);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .tech-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .tech-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tech-item i {
+            color: var(--nike-accent);
+            font-size: 1.2rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #f2f2f2;
+            margin-top: 0.5rem;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: var(--nike-accent);
+            transition: width 1s ease;
+        }
+
+        .featured-tech {
+            background: var(--nike-black);
+            color: var(--nike-white);
+            padding: 3rem 2rem;
+            margin: 2rem auto;
+            max-width: 1400px;
+            text-align: center;
+        }
+
+        .featured-tech h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .featured-icons {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .featured-icons i {
+            font-size: 3rem;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .featured-icons i:hover {
+            color: var(--nike-accent);
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tech-list {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-icons {
+                gap: 2rem;
+            }
+
+            .featured-icons i {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <h2 class="loader-text">JUST DO IT</h2>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Ashok</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="languages.html">Skills</a></li>
+                <li><a href="gaming.html">Gaming Dev</a></li>
+                <li><a href="social.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-section">
+        <h1 class="section-title" data-aos="fade-up" data-aos-delay="100">Tech Stack</h1>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Technologies and tools I work with</p>
+
+        <!-- Featured Technologies -->
+        <div class="featured-tech" data-aos="fade-up" data-aos-delay="300">
+            <h2>Primary Skills</h2>
+            <div class="featured-icons">
+                <i class="fab fa-python" title="Python" data-aos="fade-up" data-aos-delay="400"></i>
+                <i class="fab fa-js" title="JavaScript" data-aos="fade-up" data-aos-delay="450"></i>
+                <i class="fab fa-react" title="React" data-aos="fade-up" data-aos-delay="500"></i>
+                <i class="fab fa-unity" title="Unity" data-aos="fade-up" data-aos-delay="550"></i>
+                <i class="fab fa-node" title="Node.js" data-aos="fade-up" data-aos-delay="600"></i>
+                <i class="fab fa-aws" title="AWS" data-aos="fade-up" data-aos-delay="650"></i>
+            </div>
+        </div>
+
+        <!-- Tech Categories -->
+        <div class="tech-grid">
+            <!-- Programming Languages -->
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="700">
+                <h3>Languages</h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-code"></i>
+                        <span>C#</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-code"></i>
+                        <span>Java</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Technologies -->
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="800">
+                <h3>Web Tech</h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-node"></i>
+                        <span>Node.js</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Development -->
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="900">
+                <h3>Game Dev</h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <i class="fab fa-unity"></i>
+                        <span>Unity</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Unreal</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-cube"></i>
+                        <span>Blender</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Maya</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI/ML -->
+            <div class="tech-category" data-aos="fade-up" data-aos-delay="1000">
+                <h3>AI/ML</h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <i class="fas fa-brain"></i>
+                        <span>TensorFlow</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-chart-network"></i>
+                        <span>PyTorch</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-robot"></i>
+                        <span>Scikit-learn</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-database"></i>
+                        <span>Pandas</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="../know-more.html" class="back-home-btn" data-aos="fade-up" data-aos-delay="1100">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Explore</span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Ashok. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://instagram.com/ashokversez" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/ashokmanikanta" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ashok0076" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/channel/UConSYS8Vo2v_EzdF6bLjogQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 
