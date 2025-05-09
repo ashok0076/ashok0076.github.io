@@ -1,0 +1,30 @@
+SEO Meta Tags Strategy
+
+Homepage (index.html):
+<meta name="description" content="Portfolio of Gurram Ashok Manikanta - Game Developer & KL University Student. Explore my journey in game development, projects, and technical expertise.">
+<meta name="keywords" content="Ashok Manikanta, Gurram Ashok Manikanta, KL University, Game Developer, Ashok Gurram, KL University Student, Unity Developer">
+<meta name="author" content="Gurram Ashok Manikanta">
+
+About Page (about.html):
+<meta name="description" content="Learn about Gurram Ashok Manikanta - A passionate game developer and KL University student. Discover my background, skills, and aspirations in game development.">
+<meta name="keywords" content="About Ashok Manikanta, Gurram Ashok, KL University Student Profile, Game Developer Portfolio, Ashok Gurram Background">
+
+Languages Page (languages.html):
+<meta name="description" content="Explore the technical skills and programming languages mastered by Gurram Ashok Manikanta, KL University student and game developer.">
+<meta name="keywords" content="Programming Skills, Game Development Technologies, KL University Tech Stack, Ashok Manikanta Technical Skills">
+
+Gaming Page (gaming.html):
+<meta name="description" content="Game development projects and portfolio by Gurram Ashok Manikanta. See Unity games, development process, and technical implementations.">
+<meta name="keywords" content="Game Development Portfolio, Unity Games, Ashok Manikanta Games, KL University Game Developer">
+
+Social Page (social.html):
+<meta name="description" content="Connect with Gurram Ashok Manikanta - Game Developer and KL University student. Find my professional networks and social media presence.">
+<meta name="keywords" content="Contact Ashok Manikanta, Gurram Ashok Social, KL University Student Contact, Game Developer Network">
+
+Blog Page (blog.html):
+<meta name="description" content="Read technical insights and game development experiences from Gurram Ashok Manikanta, KL University student and aspiring game developer.">
+<meta name="keywords" content="Game Development Blog, Ashok Manikanta Articles, KL University Student Blog, Unity Development Tips">
+
+Projects Page (projects.html):
+<meta name="description" content="Browse through projects developed by Gurram Ashok Manikanta - KL University student showcasing game development and technical expertise.">
+<meta name="keywords" content="Game Development Projects, Ashok Manikanta Portfolio, KL University Student Projects, Unity Game Projects"> 
