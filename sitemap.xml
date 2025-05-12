@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage -->
+     <meta name="description" content="Portfolio of Gurram Ashok Manikanta - Game Developer & KL University Student. Explore my journey in game development, projects, and technical expertise.">
+    <meta name="keywords" content="Ashok Manikanta, Gurram Ashok Manikanta, KL University, Game Developer, Ashok Gurram, KL University Student, Unity Developer">
+    <meta name="author" content="Gurram Ashok Manikanta">
     <url>
         <loc>https://iamashok.me/index.html</loc>
         <lastmod>2025-05-09</lastmod>
