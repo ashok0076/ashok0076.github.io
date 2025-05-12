@@ -1,0 +1,167 @@
+/* Languages Page Styles */
+
+/* Hero Section */
+.languages-hero {
+    min-height: 50vh;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.languages-hero-content {
+    max-width: 800px;
+}
+
+.languages-hero h1 {
+    font-size: 3rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.languages-hero p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background: var(--bg-secondary);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.skill-category h2 {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-category h2 i {
+    color: var(--accent-color);
+}
+
+.skill-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.skill-item {
+    background: var(--bg-primary);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.skill-info {
+    flex: 1;
+}
+
+.skill-name {
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.skill-level {
+    height: 6px;
+    background: var(--bg-secondary);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+/* Experience Section */
+.experience-section {
+    background: var(--bg-secondary);
+    padding: 4rem 2rem;
+}
+
+.experience-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2rem;
+    background: var(--bg-primary);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.timeline-date {
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .languages-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .languages-hero p {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .skill-category h2 {
+        font-size: 1.5rem;
+    }
+
+    .experience-section {
+        padding: 2rem 1rem;
+    }
+} 
